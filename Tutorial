@@ -606,3 +606,176 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 
 ## JavaScript Character Set
 JavaScript uses the Unicode character set.
+
+## The ASCII Character Set
+ASCII was the first character encoding standard for the web. It defined 128 different characters that could be used on the internet:
+
+English letters (A-Z)
+Numbers (0-9)
+Special characters like ! $ + - ( ) @ < >.
+
+## The ANSI Character Set
+ANSI (Windows-1252) was the original Windows character set:
+Identical to ASCII for the first 127 characters
+Special characters from 128 to 159
+Identical to UTF-8 from 160 to 255
+<meta charset="Windows-1252">
+
+## The ISO-8859-1 Character Set
+ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes. HTML 4 also supported UTF-8.
+
+Identical to ASCII for the first 127 characters
+Does not use the characters from 128 to 159
+Identical to ANSI and UTF-8 from 160 to 255
+
+HTML 4 Example
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+
+HTML 5 Example
+<meta charset="ISO-8859-1">
+
+## The UTF-8 Character Set
+is identical to ASCII for the values from 0 to 127
+Does not use the characters from 128 to 159
+Identical to ANSI and 8859-1 from 160 to 255
+Continues from the value 256 to 10 000 characters
+<meta charset="UTF-8">
+
+## The HTML charset Attribute
+The character set is specified in the <meta> tag:
+
+Example
+<meta charset="UTF-8">
+The HTML5 specification encourages web developers to use the UTF-8 character set.
+UTF-8 covers almost all of the characters and symbols in the world!
+
+## JavaScript Variable Scope
+Scope refers to the availability of variables and functions in certain parts of the code.
+
+In JavaScript, a variable has two types of scope:
+
+Global Scope
+Local Scope
+
+## Global Scope
+A variable declared at the top of a program or outside of a function is considered a global scope variable.
+
+example of a global scope variable.
+
+// program to print a text 
+let a = "hello";
+
+function greet () {
+    console.log(a);
+}
+greet(); // hello
+
+In the above program, variable "a" is declared at the top of a program and is a global variable. It means the variable "a" can be used anywhere in the program.
+
+The value of a global variable can be changed inside a function. For example,
+
+// program to show the change in global variable
+let a = "hello";
+
+function greet() {
+    a = 3;
+}
+
+// before the function call
+console.log(a); // hello
+
+//after the function call
+greet();
+console.log(a); // 3
+
+In the above program, variable "a" is a global variable. The value of "a" is hello. Then the variable "a" is accessed inside a function and the value changes to 3.
+
+Hence, the value of "a" changes after changing it inside the function.
+
+Note: It is a good practice to avoid using global variables because the value of a global variable can change in different areas in the program. It can introduce unknown results in the program.
+
+In JavaScript, a variable can also be used without declaring it. If a variable is used without declaring it, that variable automatically becomes a global variable.
+
+For example,
+
+function greet() {
+    a = 3
+}
+
+greet();
+
+console.log(a); // hello
+
+In the above program, variable a is a global variable.
+
+If the variable was declared using let a = "hello", the program would throw an error.
+
+
+## Local Scope
+A variable can also have a local scope, i.e it can only be accessed within a function.
+
+Example 1: Local Scope Variable
+
+// program showing local scope of a variable
+let a = "hello";
+
+function greet() {
+    let b = "World"
+    console.log(a + b);
+}
+
+greet();
+console.log(a + b); // error
+
+Output
+helloWorld
+Uncaught ReferenceError: b is not defined
+
+In the above program, variable a is a global variable and variable b is a local variable. The variable b can be accessed only inside the function greet. Hence, when we try to access variable b outside of the function, an error occurs.
+
+let is Block Scoped
+The let keyword is block-scoped (variable can be accessed only in the immediate block).
+
+Example 2: block-scoped Variable
+// program showing block-scoped concept
+// global variable
+
+let a = 'Hello';
+
+function greet() {
+
+    // local variable
+    let b = 'World';
+
+    console.log(a + ' ' + b);
+
+    if (b == 'World') {
+
+        // block-scoped variable
+        let c = 'hello';
+
+        console.log(a + ' ' + b + ' ' + c);
+    }
+
+    // variable c cannot be accessed here
+    console.log(a + ' ' + b + ' ' + c);
+}
+
+greet();
+
+Output
+Hello World
+Hello World hello
+Uncaught ReferenceError: c is not defined
+
+In the above program, variable
+
+a is a global variable. It can be accessed anywhere in the program.
+b is a local variable. It can be accessed only inside the function greet.
+c is a block-scoped variable. It can be accessed only inside the if statement block.
+Hence, in the above program, the first two console.log() work without any issue.
+
+However, we are trying to access the block-scoped variable c outside of the block in the third console.log(). This will throw an error.
+
+Note: In JavaScript, var is function scoped and let is block-scoped. If you try to use var c = 'hello'; inside the if statement in the above program, the whole program works, as c is treated as a local variable.
+
