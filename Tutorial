@@ -1,12 +1,12 @@
-JAVASCRIPT DISPLAY POSSIBILITIES.
+## JAVASCRIPT DISPLAY POSSIBILITIES.
 
-WHAT IS JAVASCRIPT DISPLAY POSSIBILITIES?
+## WHAT IS JAVASCRIPT DISPLAY POSSIBILITIES?
 JavaScript display output or display possibilities is the feasible ways of displaying the output of a given code. 
 
-JavaScript Display Possibilities
+## JavaScript Display Possibilities
 The output can be display by using four different ways which are listed below:
 
-innerHTML:
+## innerHTML:
 This method sets or returns the HTML content of an element. it is also used to access an element.
 
 Example:
@@ -15,14 +15,14 @@ Example:
 document.getElementById('cool').innerHTML = "Hello world!";
 </script>.
 
-document.write():
+## document.write():
 This method is mostly used for testing purpose. it is used to write some content or JavaScript code in a Document. also used to delete all the content from the HTML document and inserts the new content.
 
 <script>
 document.write('How are you?');
 </script>
 
-window.alert():
+## window.alert():
 It is use to display an alert box on the window. The alert box is mostly used when you want an information to come through to the user. It is displayed with a message and an OK button.
 
 <script>
@@ -31,22 +31,22 @@ alert(" HEY!" )
 </script>
 NOTE: These are both the same syntax.
 
-console.log():
+## console.log():
 The console.log() method outputs a message to the web console. The message may be a single string or it may be any one or more JavaScript objects.
 
 <script>
 console.log(6+3)
 </script>
 
-JavaScript Print
+## JavaScript Print
 window.print() method in the browser is call to print the content of the current window.
 
-JavaScript Statements
+## JavaScript Statements
 Javascript statements are list of javascript instructions found in javascript program.
 
 JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.
 
-break statement
+## break statement
 The break statement terminates the current loop or switch statement and transfers program control to the statement following the terminated statement. It can also be used to jump past a labeled statement when used within that labeled statement.
 
 let i = 0;
@@ -61,7 +61,7 @@ while (i < 6) {
 console.log(i);
 // Break out of a loop when i is 3.
 
-class	
+## class	
 Declares a class
 
 Example
@@ -75,7 +75,7 @@ myCar = new Car("Ford");
 
 Create a Car class, and then an object (myCar) based on the Car class:
 
-const	
+## const	
 Declares a variable, array or object with a constant value
 
 //Declares variables
@@ -89,7 +89,7 @@ const cars = ["Saab", "Volvo", "BMW"];
 // Create an object:
 const car = {type:"Fiat", model:"500", color:"white"};
 
-continue	
+## continue	
 Breaks one iteration (in the loop) if a specified condition occurs, and continues with the next iteration in the loop
 
 //Loop through a block of code, but skip the value of 3
@@ -108,10 +108,10 @@ while (i < 5) {
   text += i + "<br>";
 }
 
-debugger	
+## debugger	
 Stops the execution of JavaScript.
 
-do ... while	
+## do ... while	
 Executes a block of statements and repeats the block while a condition is true
 
 Example:
@@ -124,7 +124,7 @@ do {
 }
 while (i < 5);
 
-for	
+## for	
 Loops through a block of code a number of times
 
 //Loop through a code block five times:
@@ -140,7 +140,7 @@ for (let i = 0; i < cars.length; i++) {
   text += cars[i] + "<br>";
 }
 
-for ... in	
+## for ... in	
 Loops through the properties of an object
 
 //Iterate over the properties of an object:
@@ -159,7 +159,7 @@ for (let x in cars) {
   text += cars[x] + " ";
 }
 
-for ... of	
+## for ... of	
 Loops through the values of an iterable object
 
 //Iterate over the values of an array
@@ -177,7 +177,7 @@ for (let x of text) {
   text += x + " ";
 }
 
-function	
+## function	
 Declares a function
 
 Example
@@ -191,7 +191,7 @@ function myFunction() {
 // Call the function
 myFunction();
 
-if ... else ... else if	
+## if ... else ... else if	
 Marks a block of statements to be executed depending on a condition
 
 Examples
@@ -211,7 +211,7 @@ if (hour < 20) {
   greeting = "Good evening";
 }
 
-let	
+## let	
 Declares a variable
 
 Example
@@ -235,7 +235,7 @@ function myFunction(name) {
   return "Hello " + name;
 }
 
-switch	
+## switch	
 Marks a block of statements to be executed depending on different cases
 
 Example
@@ -258,7 +258,7 @@ switch(fruits) {
     text = "I have never heard of that fruit...";
 }
 
-throw	
+## throw	
 Throws (generates) an error
 
 Example
@@ -287,7 +287,7 @@ function myFunction() {
 }
 </script>
 
-try ... catch ... finally	
+## try ... catch ... finally	
 Marks the block of statements to be executed when an error occurs in a try block, and implements error handling
 
 Example
@@ -310,7 +310,7 @@ Declares a variable
 // Create a variable called carName and assign the value "Volvo" to it:
 var carName = "Volvo";
 
-while	
+## while	
 Marks a block of statements to be executed while a condition is true
 
 //Loop a code block as long as a i is less than 5:
@@ -333,7 +333,7 @@ while (i < cars.length) {
 
 NOTE: A JavaScript program is a list of programming statements. In HTML, JavaScript programs are executed by the web browser. Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same order as they are written. JavaScript programs (and JavaScript statements) are often called JavaScript code.
 
-JavaScript keywords. These are javascript reserved words that cannot be used as variables, labels, or function names: 
+## JavaScript keywords. These are javascript reserved words that cannot be used as variables, labels, or function names: 
 abstract	  arguments	    await*	    boolean
 break	      byte	        case	        catch
 char	      class*	      const*	      continue
@@ -351,7 +351,7 @@ throw	      throws	      transient	    true
 try	        typeof	      var	          void
 volatile	  while	        with	        yield
 
-Semicolons ;
+## Semicolons ;
 Semicolons separate JavaScript statements.
 
 Add a semicolon at the end of each executable statement:
@@ -381,7 +381,7 @@ A good practice is to put spaces around operators ( = + - * / ):
 
 let x = y + z;
 
-JavaScript Line Length and Line Breaks
+## JavaScript Line Length and Line Breaks
 
 For best readability, programmers often like to avoid code lines longer than 80 characters. If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
 
@@ -402,7 +402,7 @@ function myFunction() {
   document.getElementById("demo2").innerHTML = "How are you?";
 }
 
-JavaScript Syntax
+## JavaScript Syntax
 JavaScript syntax is the set of rules, how JavaScript programs are constructed:
 
 How to create variables:
@@ -414,7 +414,7 @@ x = 5;
 y = 6;
 let z = x + y;
 
-JavaScript Values
+## JavaScript Values
 The JavaScript syntax defines two types of values:
 
 Fixed values
@@ -424,7 +424,7 @@ Fixed values are called Literals.
 
 Variable values are called Variables.
 
-JavaScript Literals
+## JavaScript Literals
 The two most important syntax rules for fixed values are:
 
 1. Numbers are written with or without decimals:
@@ -439,7 +439,7 @@ The two most important syntax rules for fixed values are:
 
 'John Smith'
 
-JavaScript Variables
+## JavaScript Variables
 In a programming language, variables are used to store data values.
 
 JavaScript uses the keywords var, let and const to declare variables.
@@ -451,7 +451,7 @@ In this example, x is defined as a variable. Then, x is assigned (given) the val
 let x;
 x = 6;
 
-JavaScript Operators
+## JavaScript Operators
 JavaScript uses arithmetic operators ( + - * / ) to compute values:
 
 (5 + 6) * 10
@@ -462,7 +462,7 @@ let x, y;
 x = 5;
 y = 6;
 
-JavaScript Expressions
+## JavaScript Expressions
 An expression is a combination of values, variables, and operators, which computes to a value.
 
 The computation is called an evaluation.
@@ -479,25 +479,7 @@ For example, "John" + " " + "Smith", evaluates to "John Smith":
 
 "John" + " " + "Smith"
 
-JavaScript Keywords
-JavaScript keywords are used to identify actions to be performed.
-
-The let keyword tells the browser to create variables:
-
-let x, y;
-x = 5 + 6;
-y = x * 10;
-
-The var keyword also tells the browser to create variables:
-
-var x, y;
-x = 5 + 6;
-y = x * 10;
-
-In these examples, using var or let will produce the same result.
-
-
-JavaScript Comments
+## JavaScript Comments
 
 Not all JavaScript statements are "executed".
 
@@ -510,7 +492,7 @@ let x = 5;   // This will be executed
 // x = 6;   This will NOT be executed
 
 
-JavaScript Identifiers / Names
+## JavaScript Identifiers / Names
 
 Identifiers are JavaScript names. Identifiers are used to name variables and keywords, and functions. The rules for legal names are the same in most programming languages.
 
@@ -524,7 +506,7 @@ Subsequent characters may be letters, digits, underscores, or dollar signs.
 Note
 Numbers are not allowed as the first character in names. This way JavaScript can easily distinguish identifiers from numbers.
 
-JavaScript is Case Sensitive
+## JavaScript is Case Sensitive
 All JavaScript identifiers are case sensitive. 
 
 The variables lastName and lastname, are two different variables:
@@ -534,31 +516,31 @@ lastName = "Doe";
 lastname = "Peterson";
 JavaScript does not interpret LET or Let as the keyword let.
 
-JavaScript and Camel Case
+## JavaScript and Camel Case
 Historically, programmers have used different ways of joining multiple words into one variable name:
 
-Hyphens:
+## Hyphens:
 
 first-name, last-name, master-card, inter-city.
 
 Hyphens are not allowed in JavaScript. They are reserved for subtractions.
 
-Underscore:
+## Underscore:
 
 first_name, last_name, master_card, inter_city.
 
-Upper Camel Case (Pascal Case):
+## Upper Camel Case (Pascal Case):
 
 FirstName, LastName, MasterCard, InterCity.
 
-Lower Camel Case:
+## Lower Camel Case:
 
 JavaScript programmers tend to use camel case that starts with a lowercase letter:
 
 firstName, lastName, masterCard, interCity.
 
 
-JavaScript Comments
+## JavaScript Comments
 JavaScript comments can be used to explain JavaScript code, and to make it more readable.
 
 JavaScript comments can also be used to prevent execution, when testing alternative code.
@@ -602,7 +584,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 It is most common to use single line comments.
 Block comments are often used for formal documentation.
 
-Using Comments to Prevent Execution
+## Using Comments to Prevent Execution
 Using comments to prevent execution of code is suitable for code testing.
 
 Adding // in front of a code line changes the code lines from an executable line to a comment.
@@ -613,7 +595,7 @@ Example
 //document.getElementById("myH").innerHTML = "My First Page";
 document.getElementById("myP").innerHTML = "My first paragraph.";
 
-This example uses a comment block to prevent execution of multiple lines:
+## This example uses a comment block to prevent execution of multiple lines:
 
 Example
 /*
@@ -622,5 +604,5 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 */
 
 
-JavaScript Character Set
+## JavaScript Character Set
 JavaScript uses the Unicode character set.
