@@ -1,9 +1,9 @@
-JAVASCRIPT DISPLAY POSSIBILITIES.
+## JAVASCRIPT DISPLAY POSSIBILITIES.
 
 WHAT IS JAVASCRIPT DISPLAY POSSIBILITIES?
 JavaScript display output or display possibilities is the feasible ways of displaying the output of a given code. 
 
-JavaScript Display Possibilities
+## JavaScript Display Possibilities
 The output can be display by using four different ways which are listed below:
 
 ## innerHTML:
@@ -478,6 +478,24 @@ The values can be of various types, such as numbers and strings.
 For example, "John" + " " + "Smith", evaluates to "John Smith":
 
 "John" + " " + "Smith"
+
+## JavaScript Keywords
+JavaScript keywords are used to identify actions to be performed.
+
+The let keyword tells the browser to create variables:
+
+let x, y;
+x = 5 + 6;
+y = x * 10;
+
+The var keyword also tells the browser to create variables:
+
+var x, y;
+x = 5 + 6;
+y = x * 10;
+
+In these examples, using var or let will produce the same result.
+
 
 ## JavaScript Comments
 
