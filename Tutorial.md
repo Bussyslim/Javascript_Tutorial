@@ -479,24 +479,6 @@ For example, "John" + " " + "Smith", evaluates to "John Smith":
 
 "John" + " " + "Smith"
 
-## JavaScript Keywords
-JavaScript keywords are used to identify actions to be performed.
-
-The let keyword tells the browser to create variables:
-
-let x, y;
-x = 5 + 6;
-y = x * 10;
-
-The var keyword also tells the browser to create variables:
-
-var x, y;
-x = 5 + 6;
-y = x * 10;
-
-In these examples, using var or let will produce the same result.
-
-
 ## JavaScript Comments
 
 Not all JavaScript statements are "executed".
