@@ -1,9 +1,9 @@
-## JAVASCRIPT DISPLAY POSSIBILITIES.
+JAVASCRIPT DISPLAY POSSIBILITIES.
 
-## WHAT IS JAVASCRIPT DISPLAY POSSIBILITIES?
+WHAT IS JAVASCRIPT DISPLAY POSSIBILITIES?
 JavaScript display output or display possibilities is the feasible ways of displaying the output of a given code. 
 
-## JavaScript Display Possibilities
+JavaScript Display Possibilities
 The output can be display by using four different ways which are listed below:
 
 ## innerHTML:
